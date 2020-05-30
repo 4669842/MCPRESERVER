@@ -6,4 +6,5 @@ RUN wget https://gist.githubusercontent.com/4669842/e25cd0c57d0e5b31874423622e3f
 RUN wget https://launcher.mojang.com/v1/objects/c4a62eb36917aaa06dc8e20a2a35264d5fda123b/server.jar
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
+VOLUME ["/data"]
 ENTRYPOINT ["java","-jar","/server.jar"]
